@@ -76,7 +76,7 @@ risk %>%
   count(status) %>%
   ggplot(aes(status, n, fill = status)) +
   geom_col(width = 0.75, show.legend = FALSE) +
-  ylim(0, 500)+
+  ylim(0, 500) + # membuat batas atas dan bawah pada sumbu y dengan ylim(batas bawah, batas atas) jika disini dilihat batas bawah 0, dan batas atas 500
   scale_fill_manual(
     values = c(
       "Resiko Tinggi" = "#8E3B46",
